@@ -9,5 +9,7 @@
 .classpath
 .idea/
 *.iml
+
+# No subir configuración sensible
 src/main/resources/database.properties
 
