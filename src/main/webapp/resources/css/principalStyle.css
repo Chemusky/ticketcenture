@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/* Reset bsico */
+body, h1, h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e9eced;
+	color: #333;
+}
+
+/* Contenedor principal */
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Contenedor verde */
+.login {
+	background-color: #66F1C2;
+	padding: 0.5rem 1rem;
+}
+
+/* Login y Registro */
+.login-right {
+	display: flex;
+	justify-content: flex-end;
+	gap: 2rem;
+}
+
+.login-right a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.login-right a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* Menu autenticado */
+.login-center .main-menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
+}
+
+.login-center .main-menu a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.login-center .main-menu a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* MenÃº USUARIO autenticado */
+.main-menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: center; /* ð centrado */
+	gap: 2rem; /* espacio entre enlaces */
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu li {
+	display: inline;
+}
+
+.main-menu a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* Mensaje de bienvenida a usuario autenticado */
+.welcome-message-user {
+	margin-top: 10px;
+	text-align: right;
+}
+
+/* Titulo principal */
+h1 {
+	text-align: center;
+	margin: 1.5rem 0;
+	color: #66F1C2;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+/*Pagina de confirmacion */
+.confirmacion {
+	text-align: center;
+}
+
+/* Seccion de eventos */
+.eventos {
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	border-radius: 8px;
+}
+
+/* Layout de noticias + merchan/favoritos */
+.noticias, .merchan {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	border-radius: 8px;
+}
+
+/* Contenedor flex para noticias y merchan */
+.section-row {
+	display: flex;
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* Noticias ocupa 60% */
+.noticias {
+	flex: 0 0 60%;
+}
+
+/* Merchan ocupa 40% */
+.merchan {
+	flex: 0 0 40%;
+}
+
+/* Favoritos debajo de merchan */
+.favoritos {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	border-radius: 8px;
+	margin-top: 1.5rem;
+}
+
+.favoritos .grupo-imagen img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover; /* Recorta la imagen sin deformarla */
+	border-radius: 8px; /* Opcional: esquinas redondeadas */
+	display: block;
+}
+
+/* ==== EVENTOS EN FILA ==== */
+.eventos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* Permite que bajen a la siguiente lï¿½nea si no caben */
+	gap: 1rem; /* Espacio entre tarjetas */
+}
+
+.event-link {
+	background-color: #66F1C2;
+	padding: 6px 12px;
+	font-size: 0.85rem;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	color: #444;
+	transition: color 0.3s ease;
+	font-weight: bold;
+}
+
+.event-link:hover {
+	color: #d12cff;;
+}
+
+.eventos .evento {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 0.8rem;
+	border-radius: 8px;
+	width: 150px; /* Ancho fijo para que todas las tarjetas sean iguales */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.eventos .evento img {
+	width: 100%;
+	height: 200px; /* o el alto que prefieras */
+	border-radius: 6px;
+	object-fit: cover;
+}
+
+.eventos h2 {
+	flex-basis: 100%; /* El tï¿½tulo ocupa toda la fila */
+	margin-bottom: 0.5rem;
+}
+
+/* Botón de volver */
+.btn-back-link {
+	display: inline-block;
+	padding: 8px;
+	background-color: #fff;
+	border: 2px solid #007bff;
+	color: #007bff;
+	border-radius: 5em;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.2s ease-in-out;
+}
+
+.btn-back-link:hover {
+	background-color: #007bff;
+	color: white;
+}
+
+.confirmacion-titulo, .confirmacion-subtitulo {
+	text-align: center;
+	margin-top: 20px;
+	color: #333;
+}
+
+.confirmacion-container {
+	margin: 180px auto 0 auto;
+	/* Baja el bloque y lo centra horizontalmente */
+	padding: 50px 30px; /* Espacio interno */
+	width: 60%; /* Tamaño del recuadro */
+	max-width: 600px; /* Evita que se haga demasiado grande */
+	text-align: center; /* Centra el texto */
+	background-color: #fafafa; /* Fondo suave */
+	border: 2px solid #66F1C2; /* Borde suave */
+	border-radius: 12px; /* Esquinas redondeadas */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra ligera */
+}
+
+.confirmacion-titulo {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.confirmacion-subtitulo {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+ /* APARTADO NOTICIAS RECIENTES */
+	/* CONTENEDOR GENERAL */      
+.noticias-recientes {
+	margin: 40px 0;
+	width: 55%;
+}
+
+.noticias-recientes h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 6px;
+}
+
+/* TARJETA DE NOTICIA */
+.noticia {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 22px;
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #fafafa;
+	border: 1px solid #e0e0e0;
+	transition: box-shadow 0.2s ease;
+}
+
+.noticia:hover {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEN */
+.noticia-imagen img {
+	width: 150px;
+	height: 110px;
+	object-fit: cover;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+}
+
+/* CONTENIDO */
+.noticia-contenido h3 {
+	margin: 0 0 8px 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.noticia-contenido p {
+	margin: 0 0 10px 0;
+	color: #555;
+	line-height: 1.4;
+}
+
+/* ENLACE LEER MÁS */
+.noticia-contenido .leer-mas {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.noticia-contenido .leer-mas:hover {
+	text-decoration: underline;
+}
+
+.section-row {
+	display: flex;
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+	/* NUEVO → centra todo el bloque */
+	width: 90%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Columna izquierda (noticias) */
+.col-izquierda {
+	flex: 0 0 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+/* Columna derecha (merchan + favoritos) */
+.col-derecha {
+	flex: 0 0 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}

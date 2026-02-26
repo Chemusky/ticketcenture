@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9eced;
+    color: #333;
+    padding: 20px;
+}
+
+/* Botón volver */
+.btn-back-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    border-radius: 5em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-back-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Título */
+.title {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Mensajes */
+.error-message {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Filtros */
+.filter-panel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+.filter-item input,
+.filter-item select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+}
+
+/* --- NUEVO: Alineación perfecta de botones con inputs --- */
+.filter-button button,
+.filter-button a {
+    margin-top: 22px; /* Ajusta si quieres más o menos alineación */
+}
+
+.invisible-label {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botón buscar */
+.search-btn {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 2px solid #ffffff40;
+    font-weight: bold;
+}
+
+/* Botón crear noticia */
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sin noticias visibles */
+.no-results {
+	text-align: center;
+}
+
+/* Tarjetas de noticias */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-card {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #66F1C2;
+    gap: 20px;
+}
+
+.news-thumb {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-info {
+    flex-grow: 1;
+}
+
+.news-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.news-summary {
+    margin: 8px 0;
+    color: #444;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.status-published {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-draft {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Acciones */
+.news-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-action {
+    padding: 8px 14px;
+    background-color: #66F1C2;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-action.edit {
+    background-color: #ffc107;
+}
+
+.btn-action.delete {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+/* PAGINACIÓN */
+.pagination {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.page-number {
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 2px solid #66F1C2;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.page-number:hover {
+    background-color: #66F1C2;
+    color: #000;
+}
+
+.page-number.active {
+    background-color: #66F1C2;
+    color: #000;
+    border-color: #28a745;
+}

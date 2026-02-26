@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+body { 
+	font-family: Arial, sans-serif;
+	background-color: #e9eced;
+	color: #333;
+} 
+
+
+/* Botón de vuelta atrás */
+.btn-back-link {
+	display: inline-block;
+	padding: 8px;
+	background-color: #fff;
+	border: 2px solid #007bff;
+	color: #007bff;
+	border-radius: 5em;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.2s ease-in-out;
+}
+
+.btn-back-link:hover {
+	background-color: #007bff;
+	color: white;
+}
+	
+.container { 
+	display: block;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+} 
+
+.header-group { 
+	width: auto; 
+	margin-bottom: 20px; 
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+} 
+
+.content-wrapper { 
+	display: flex; 
+	width: auto; 
+	background-color: #fff;
+	border: 2px solid #66F1C2;	
+	padding: 20px;
+}
+
+.main-content { 
+	flex: 3; 
+	padding-right: 20px; 
+	padding: 20px;
+} 
+
+.sidebar { 
+	flex: 1; 
+	display: flex; 
+	flex-direction: column; 
+	gap: 10px; 
+	padding: 20px;
+} 
+
+.band-title { 
+	font-size: 36px; 
+	margin-bottom: 10px; 
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+} 
+
+.band-image { 
+	width: 30%; 
+	height: auto; 
+	margin-bottom: 20px; 
+} 
+
+h3 { 
+	margin-top: 30px; 
+	margin-bottom: 10px; 
+	color: #333; 
+} 
+
+p, ul { 
+	margin: 0 0 20px 0; 
+	color: #555; 
+} 
+
+ul { 
+	list-style-type: none; 
+	padding-left: 0; 
+} 
+
+ul li { 
+	margin-bottom: 5px; 
+} 
+
+.sidebar button { 
+	padding: 10px; 
+	font-size: 14px; 
+	cursor: pointer; 
+	border: none; 
+	border-radius: 5px; 
+	background-color: #ddd; 
+	transition: background-color 0.3s; 
+} 
+
+.sidebar button:hover { 
+	background-color: #ccc; 
+} 
+
+.favorite { 
+	background-color: #ffdddd; 
+} 
+
+.bordered { 
+	border: 1px solid #999; 
+	background-color: white; 
+}
+
+.galeria { 
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: 15px; 
+} 
+
+.foto-galeria { 
+	width: 200px; 
+	height: 200px; 
+	object-fit: cover;
+	border: 2px solid #66F1C2; 
+	border-radius: 5px; }
+	
+.texto-multilinea {
+	white-space: pre-line; }
+	
+
+/* ==== EVENTOS EN FILA ==== */ 
+.eventos { 
+	display: flex; 
+	flex-wrap: wrap; /* Permite que bajen a la siguiente línea si no caben */ 
+	gap: 1rem; /* Espacio entre tarjetas */ 
+} 
+
+.eventos .evento { 
+	background-color: #fff; 
+	border: 1px solid #ccc; 
+	padding: 0.8rem; 
+	border-radius: 8px; 
+	width: 150px; /* Ancho fijo para que todas las tarjetas sean iguales */ 
+	text-align: center; 
+} 
+
+.eventos .evento img { 
+	width: 100%; 
+	height: auto; 
+	border-radius: 6px; 
+}
+
+.eventos h2 { 
+	flex-basis: 100%; /* El título ocupa toda la fila */ 
+	margin-bottom: 0.5rem; 
+}
+	

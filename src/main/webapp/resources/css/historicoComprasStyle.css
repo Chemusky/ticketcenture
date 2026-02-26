@@ -1,0 +1,125 @@
+/* ======== ESTILOS GENERALES ======== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9eced;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 6px solid #66F1C2;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+}
+
+.no-compras {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* ======== BOTÓN VOLVER ======== */
+
+.btn-back-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #fff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    border-radius: 5em;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-back-link:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* ======== LISTA DE COMPRAS ======== */
+
+.lista-compras {
+    list-style: none;
+    padding: 0;
+}
+
+.compra-item {
+    margin-bottom: 25px;
+}
+
+/* ======== PRIMERA FILA RESUMEN ======== */
+
+.compra-resumen-fila {
+    background: #66F1C2; /* verde fuerte */
+    color: #000;
+    padding: 12px 15px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ======== PANEL VERDE CLARITO (solo marco) ======== */
+
+.compra-detalle {
+    background: #E6FFF7; /* verde clarito */
+    border: 1px solid #66F1C2;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* ======== TABLA DE ENTRADAS ======== */
+
+.tabla-entradas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Cabecera de la tabla en verde fuerte */
+.tabla-entradas th {
+    background: #66F1C2;
+    color: #000;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Filas de datos en blanco */
+.tabla-entradas td {
+    background: #ffffff; /* blanco */
+    padding: 8px;
+    border-bottom: 1px solid #cceee0;
+}
+
+.tabla-entradas tr:last-child td {
+    border-bottom: none;
+}
+
+/* ======== DIRECCIONES (FUERA DEL PANEL VERDE) ======== */
+
+.direccion-linea {
+    background: #f2f2f2; /* gris clarito */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.direccion-linea strong {
+    color: #000;
+}

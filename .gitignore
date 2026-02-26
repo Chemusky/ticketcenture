@@ -1,0 +1,13 @@
+/target/
+/bin/
+*.class
+*.log
+*.tmp
+*.swp
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+src/main/resources/database.properties
+

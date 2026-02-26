@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/* ------------------------------
+   ESTILOS GENERALES
+------------------------------ */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e9eced;
+	color: #333;
+}
+
+/* Botón volver */
+.btn-back-link {
+	display: inline-block;
+	padding: 8px;
+	background-color: #fff;
+	border: 2px solid #007bff;
+	color: #007bff;
+	border-radius: 5em;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.2s ease-in-out;
+}
+
+.btn-back-link:hover {
+	background-color: #007bff;
+	color: white;
+}
+
+/* Mensajes de éxito o error */
+.error-message {
+	background-color: #ff4d4d;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+.success-message {
+	background-color: #28a745;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+/* ------------------------------
+   CONTENEDORES PRINCIPALES
+------------------------------ */
+.container, .header-group, .content-wrapper, .evento-info-box,
+	.evento-botones-box, .galeria, .tabla-stock th, .tabla-stock td {
+	border-radius: 10px;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+}
+
+.header-group {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.band-title {
+	font-size: 36px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+}
+
+.band-image {
+	width: 40%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.content-wrapper {
+	display: flex;
+	background-color: #fff;
+	border: 2px solid #66F1C2;
+	padding: 20px;
+}
+
+.main-content {
+	flex: 3;
+	padding: 20px;
+	padding-right: 20px;
+}
+
+.sidebar {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+/* ------------------------------
+   INFO DEL EVENTO
+------------------------------ */
+.evento-info-box, .evento-botones-box {
+	border: 2px solid #66F1C2;
+	padding: 15px;
+	background-color: #fff;
+}
+
+.evento-info-box h4 {
+	margin-top: 0;
+}
+
+/* ------------------------------
+   BOTONES DE ACCIÓN
+------------------------------ */
+.btn-accion {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: 0.3s ease-in-out;
+}
+
+/* Comprar y Editar */
+.btn-accion.comprar, .btn-accion.editar {
+	background-color: #e0f7ef;
+	color: #333;
+}
+
+.btn-accion.comprar:hover, .btn-accion.editar:hover {
+	background-color: #c8efe4;
+}
+
+/* Eliminar */
+.btn-accion.eliminar {
+	background-color: #ffcccc;
+	color: #333;
+}
+
+.btn-accion.eliminar:hover {
+	background-color: #ffb3b3;
+}
+
+/* ------------------------------
+   GALERÍA
+------------------------------ */
+.galeria {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.foto-galeria {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border: 2px solid #66F1C2;
+	border-radius: 5px;
+}
+
+/* ------------------------------
+   TABLA DE STOCK
+------------------------------ */
+.tabla-stock {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.tabla-stock th, .tabla-stock td {
+	border: 1px solid #66F1C2;
+	padding: 10px;
+	text-align: center;
+}
+
+.tabla-stock th {
+	background-color: #e0f7ef;
+}
+
+/* ------------------------------
+   TEXTO MULTILÍNEA
+------------------------------ */
+.texto-multilinea {
+	white-space: pre-line;
+}
+
+.input-text, .input-textarea, select {
+	width: 100%;
+	padding: 10px;
+	border: 2px solid #66F1C2;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+
+.input-textarea {
+	height: 120px;
+	resize: vertical;
+}
+
+/* ------------------------------
+   TABLA DE SELECCIÓN DE ENTRADAS
+------------------------------ */
+.tabla-entradas {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.tabla-entradas th, .tabla-entradas td {
+	padding: 10px;
+	text-align: center;
+}
+
+.tabla-entradas th {
+	background-color: #e0f7ef;
+	font-weight: bold;
+}
+
+.promo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.promo-container label {
+	font-weight: bold;
+	margin: 0;
+}
+
+.promo-container input {
+	width: 200px; 
+	padding: 8px;
+	border: 2px solid #66F1C2;
+	border-radius: 8px;
+}
+
+.promo-boton {
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* ------------------------------
+   BOTÓN AÑADIR AL CARRITO
+------------------------------ */
+.btn-panel {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #66F1C2;
+	color: #333;
+	border: none;
+	border-radius: 8px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.btn-panel:hover {
+	background-color: #4ecaa3;
+}
